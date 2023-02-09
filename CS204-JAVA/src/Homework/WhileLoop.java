@@ -10,13 +10,13 @@ public class WhileLoop {
 	public static void main(String[] args) {
 
 		int multiNum = 1;
-		
+
 		// use Scanner statement to enter number
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter the integer number : ");
 		int enteredNum = input.nextInt();
-		
-		//determine entered number if the number is positive
+
+		// determine entered number if the number is positive
 		if (enteredNum > 0) {
 			while (enteredNum != 0) {
 				multiNum *= enteredNum;
@@ -24,18 +24,18 @@ public class WhileLoop {
 			}
 
 		}
-		//determine entered number if the number is negative
+		// determine entered number if the number is negative
 		else if (enteredNum < 0) {
 			while (enteredNum != 0) {
 				multiNum *= enteredNum;
 				enteredNum++;
 			}
 		}
-		//determine entered number if the number is 0
+		// determine entered number if the number is 0
 		else {
 			multiNum = 0;
 		}
 
-		System.out.println("the product of the numbers entered :" + multiNum);
+		System.out.println("The product of the numbers entered :" + multiNum);
 	}
 }
